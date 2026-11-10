@@ -1,0 +1,153 @@
+{
+  "imagens": 50,
+  "acuracia": 0.86,
+  "tempo_medio_s": 0.62,
+  "relatorio": {
+    "BURACO": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 10.0
+    },
+    "ILUMINACAO": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 10.0
+    },
+    "LIXO": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 10.0
+    },
+    "ALAGAMENTO": {
+      "precision": 0.8461538461538461,
+      "recall": 0.9166666666666666,
+      "f1-score": 0.88,
+      "support": 12.0
+    },
+    "CALCADA": {
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1-score": 0.9411764705882353,
+      "support": 8.0
+    },
+    "NENHUM": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.86,
+    "macro avg": {
+      "precision": 0.7225071225071226,
+      "recall": 0.7194444444444444,
+      "f1-score": 0.7183442265795207,
+      "support": 50.0
+    },
+    "weighted avg": {
+      "precision": 0.8652991452991452,
+      "recall": 0.86,
+      "f1-score": 0.8595660130718954,
+      "support": 50.0
+    }
+  },
+  "matriz_confusao": {
+    "classes": [
+      "BURACO",
+      "ILUMINACAO",
+      "LIXO",
+      "ALAGAMENTO",
+      "CALCADA",
+      "NENHUM"
+    ],
+    "valores": [
+      [
+        8,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        1,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        11,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "erros": [
+    {
+      "arquivo": "BURACO/buraco_791433_borrada.jpg",
+      "previsto": "ILUMINACAO",
+      "confianca": 0.746
+    },
+    {
+      "arquivo": "BURACO/buraco_791433_escura.jpg",
+      "previsto": "ILUMINACAO",
+      "confianca": 0.604
+    },
+    {
+      "arquivo": "ILUMINACAO/iluminacao_154112985_borrada.jpg",
+      "previsto": "CALCADA",
+      "confianca": 0.707
+    },
+    {
+      "arquivo": "ILUMINACAO/iluminacao_154112985_escura.jpg",
+      "previsto": "LIXO",
+      "confianca": 0.671
+    },
+    {
+      "arquivo": "LIXO/lixo_144887578_borrada.jpg",
+      "previsto": "ALAGAMENTO",
+      "confianca": 0.371
+    },
+    {
+      "arquivo": "LIXO/lixo_144887578_escura.jpg",
+      "previsto": "ALAGAMENTO",
+      "confianca": 0.689
+    },
+    {
+      "arquivo": "ALAGAMENTO/alagamento_51718929_borrada.jpg",
+      "previsto": "LIXO",
+      "confianca": 0.305
+    }
+  ]
+}
